@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    tools:context=".MainActivity" >-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:text="player 1: 0"
+            android:textSize="20dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:text="player 2: 0"
+            android:textSize="20dp"
+            android:layout_below="@+id/txt1"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Reset"
+            android:layout_marginEnd="33dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </RelativeLayout>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="8"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:id="@+id/grid">
+    </GridView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_centerVertical="true"
+            android:text="Undo"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+        </Button>
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="Exit"
+            android:layout_height="wrap_content">
+
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_KQ"
+            android:textColor="#E81616"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="200dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>
